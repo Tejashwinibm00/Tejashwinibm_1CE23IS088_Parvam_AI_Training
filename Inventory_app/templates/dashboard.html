@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Stock Alert System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-4">
+        <!-- Header -->
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <h1 class="mb-2">📦 Inventory Stock Alert System</h1>
+                <p class="text-muted">Manage your shop inventory with real-time stock alerts</p>
+            </div>
+            <div class="col-md-4 text-end">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProductModal">+ Add Product</button>
+                <a href="/export-csv" class="btn btn-success ms-2">📥 Export CSV</a>
+            </div>
+        </div>
+
+        <!-- Statistics Cards -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="stats-card card bg-primary text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Products</h5>
+                        <h2 id="totalProducts">{{ products|length }}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card card bg-danger text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">🔴 Low Stock Items</h5>
+                        <h2 id="lowStockCount">{{ low_stock_count }}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card card bg-success text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">✅ In Stock</h5>
+                        <h2 id="inStockCount">{{ products|length - low_stock_count }}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stats-card card bg-info text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">📋 Restock</h5>
+                        <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#restockModal">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="searchInput" placeholder="🔍 Search product name or category..." value="{{ search_query }}">
+                    <button class="btn btn-outline-secondary" type="button" id="searchBtn">Search</button>
+                    <button class="btn btn-outline-secondary" type="button" id="resetBtn">Reset</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <select class="form-select" id="categoryFilter">
+                    <option value="">📂 All Categories</option>
+                    {% for category in categories %}
+                    <option value="{{ category }}" {% if category == selected_category %}selected{% endif %}>{{ category }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+
+        <!-- Products Table -->
+        {% if products|length == 0 %}
+        <div class="alert alert-info text-center py-4">
+            <h5>📭 No products found</h5>
+            <p>Add your first product to get started!</p>
+        </div>
+        {% else %}
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Current Stock</th>
+                        <th>Min Threshold</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product in products %}
+                    <tr class="{% if product.status == 'Low Stock' %}table-danger{% else %}table-success-light{% endif %}">
+                        <td><strong>#{{ product.id }}</strong></td>
+                        <td>
+                            <strong>{{ product.name }}</strong>
+                            {% if product.status == 'Low Stock' %}
+                            <span class="badge bg-danger ms-2">🔴 LOW STOCK</span>
+                            {% else %}
+                            <span class="badge bg-success ms-2">✅ IN STOCK</span>
+                            {% endif %}
+                        </td>
+                        <td>{{ product.category }}</td>
+                        <td>
+                            <span class="stock-qty {% if product.qty < product.min_threshold %}text-danger fw-bold{% endif %}">
+                                {{ product.qty }}
+                            </span>
+                        </td>
+                        <td>{{ product.min_threshold }}</td>
+                        <td>
+                            {% if product.status == 'Low Stock' %}
+                            <span class="badge bg-danger">LOW STOCK</span>
+                            {% else %}
+                            <span class="badge bg-success">IN STOCK</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-warning" onclick="editProduct({{ product.id }}, '{{ product.name }}', '{{ product.category }}', {{ product.qty }}, {{ product.min_threshold }})">✏️ Edit</button>
+                            <button class="btn btn-sm btn-danger" onclick="deleteProduct({{ product.id }}, '{{ product.name }}')">🗑️ Delete</button>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Add Product Modal -->
+    <div class="modal fade" id="addProductModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">➕ Add New Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addProductForm">
+                        <div class="mb-3">
+                            <label class="form-label">Product Name *</label>
+                            <input type="text" class="form-control" id="productName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Category *</label>
+                            <input type="text" class="form-control" id="productCategory" placeholder="e.g., Grocery, Electronics" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Quantity in Stock *</label>
+                            <input type="number" class="form-control" id="productQty" min="0" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Minimum Threshold *</label>
+                            <input type="number" class="form-control" id="productThreshold" min="1" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="submitAddProduct()">Add Product</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Product Modal -->
+    <div class="modal fade" id="editProductModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">✏️ Edit Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editProductForm">
+                        <input type="hidden" id="editProductId">
+                        <div class="mb-3">
+                            <label class="form-label">Product Name *</label>
+                            <input type="text" class="form-control" id="editProductName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Category *</label>
+                            <input type="text" class="form-control" id="editProductCategory" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Quantity in Stock *</label>
+                            <input type="number" class="form-control" id="editProductQty" min="0" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Minimum Threshold *</label>
+                            <input type="number" class="form-control" id="editProductThreshold" min="1" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="submitEditProduct()">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Restock Suggestions Modal -->
+    <div class="modal fade" id="restockModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">📋 Restock Suggestions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="restockContent">Loading suggestions...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let addProductModal = new bootstrap.Modal(document.getElementById('addProductModal'));
+        let editProductModal = new bootstrap.Modal(document.getElementById('editProductModal'));
+        let restockModal = new bootstrap.Modal(document.getElementById('restockModal'));
+
+        function submitAddProduct() {
+            const name = document.getElementById('productName').value;
+            const category = document.getElementById('productCategory').value;
+            const qty = document.getElementById('productQty').value;
+            const threshold = document.getElementById('productThreshold').value;
+
+            if (!name || !category || !qty || !threshold) {
+                alert('Please fill all fields');
+                return;
+            }
+
+            fetch('/add', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    name: name,
+                    category: category,
+                    qty: qty,
+                    min_threshold: threshold
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    alert('✅ Product added successfully!');
+                    location.reload();
+                }
+            })
+            .catch(err => alert('❌ Error adding product'));
+        }
+
+        function editProduct(id, name, category, qty, threshold) {
+            document.getElementById('editProductId').value = id;
+            document.getElementById('editProductName').value = name;
+            document.getElementById('editProductCategory').value = category;
+            document.getElementById('editProductQty').value = qty;
+            document.getElementById('editProductThreshold').value = threshold;
+            editProductModal.show();
+        }
+
+        function submitEditProduct() {
+            const id = document.getElementById('editProductId').value;
+            const name = document.getElementById('editProductName').value;
+            const category = document.getElementById('editProductCategory').value;
+            const qty = document.getElementById('editProductQty').value;
+            const threshold = document.getElementById('editProductThreshold').value;
+
+            fetch(`/edit/${id}`, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    name: name,
+                    category: category,
+                    qty: qty,
+                    min_threshold: threshold
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    alert('✅ Product updated successfully!');
+                    location.reload();
+                }
+            })
+            .catch(err => alert('❌ Error updating product'));
+        }
+
+        function deleteProduct(id, name) {
+            if (confirm(`Are you sure you want to delete "${name}"?`)) {
+                fetch(`/delete/${id}`, {method: 'POST'})
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data.success) {
+                            alert('✅ Product deleted successfully!');
+                            location.reload();
+                        }
+                    })
+                    .catch(err => alert('❌ Error deleting product'));
+            }
+        }
+
+        document.getElementById('searchBtn').addEventListener('click', function() {
+            const query = document.getElementById('searchInput').value;
+            const category = document.getElementById('categoryFilter').value;
+            let url = '/search?q=' + encodeURIComponent(query);
+            if (category) url += '&category=' + encodeURIComponent(category);
+            window.location.href = url;
+        });
+
+        document.getElementById('categoryFilter').addEventListener('change', function() {
+            const query = document.getElementById('searchInput').value;
+            const category = this.value;
+            let url = '/search?q=' + encodeURIComponent(query);
+            if (category) url += '&category=' + encodeURIComponent(category);
+            window.location.href = url;
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', function() {
+            window.location.href = '/';
+        });
+
+        document.getElementById('addProductModal').addEventListener('show.bs.modal', function() {
+            document.getElementById('productName').value = '';
+            document.getElementById('productCategory').value = '';
+            document.getElementById('productQty').value = '';
+            document.getElementById('productThreshold').value = '';
+        });
+
+        // Load restock suggestions when modal is shown
+        document.getElementById('restockModal').addEventListener('show.bs.modal', function() {
+            fetch('/api/restock-suggestions')
+                .then(res => res.json())
+                .then(data => {
+                    if (data.suggestions.length === 0) {
+                        document.getElementById('restockContent').innerHTML = '<p class="text-success">✅ All products are well-stocked!</p>';
+                        return;
+                    }
+
+                    let html = '<table class="table table-striped"><thead><tr><th>Product</th><th>Current</th><th>Min</th><th>Restock Amount</th></tr></thead><tbody>';
+                    data.suggestions.forEach(item => {
+                        html += `<tr><td>${item.name}</td><td>${item.current_qty}</td><td>${item.min_threshold}</td><td><strong>${item.suggested_restock}</strong></td></tr>`;
+                    });
+                    html += '</tbody></table>';
+                    document.getElementById('restockContent').innerHTML = html;
+                });
+        });
+    </script>
+</body>
+</html>
