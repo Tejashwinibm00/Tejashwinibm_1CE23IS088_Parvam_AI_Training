@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2>{{ 'Edit' if expense else 'Add' }} Expense</h2>
+      <form method="post">
+        <div class="mb-3">
+          <label class="form-label">Amount</label>
+          <input class="form-control" name="amount" required value="{{ expense.amount if expense else '' }}">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Category</label>
+          <input class="form-control" name="category" required value="{{ expense.category if expense else '' }}">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Date</label>
+          <input type="date" class="form-control" name="date" required value="{{ expense.date if expense else '' }}">
+        </div>
+        <button class="btn btn-primary">{{ 'Update' if expense else 'Add' }}</button>
+        <a class="btn btn-link" href="{{ url_for('dashboard') }}">Cancel</a>
+      </form>
+    </div>
+  </div>
+{% endblock %}
