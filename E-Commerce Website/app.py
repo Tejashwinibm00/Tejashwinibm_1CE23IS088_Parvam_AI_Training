@@ -243,6 +243,24 @@ def logout():
     return redirect(url_for('index'))
 
 
+@app.route('/security')
+@login_required
+def security():
+    return render_template('security.html')
+
+
+@app.route('/addresses')
+@login_required
+def addresses():
+    return render_template('addresses.html')
+
+
+@app.route('/payment-settings')
+@login_required
+def payment_settings():
+    return render_template('payment_settings.html')
+
+
 @app.route('/admin')
 @login_required
 def admin_index():

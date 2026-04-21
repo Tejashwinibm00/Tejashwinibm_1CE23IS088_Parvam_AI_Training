@@ -19,7 +19,7 @@
             <div class="d-flex align-items-center">
                 <i class="bi bi-shield-lock fs-1 text-primary me-3"></i>
                 <div>
-                    <h5 class="mb-1"><a href="#" class="text-decoration-none text-dark fw-bold">Login & Security</a></h5>
+                    <h5 class="mb-1"><a href="{{ url_for('security') }}" class="text-decoration-none text-dark fw-bold">Login & Security</a></h5>
                     <small class="text-muted">Edit login, name, and mobile number</small>
                 </div>
             </div>
@@ -30,7 +30,7 @@
             <div class="d-flex align-items-center">
                 <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
                 <div>
-                    <h5 class="mb-1"><a href="#" class="text-decoration-none text-dark fw-bold">Your Addresses</a></h5>
+                    <h5 class="mb-1"><a href="{{ url_for('addresses') }}" class="text-decoration-none text-dark fw-bold">Your Addresses</a></h5>
                     <small class="text-muted">Edit addresses for orders and gifts</small>
                 </div>
             </div>
@@ -41,7 +41,7 @@
             <div class="d-flex align-items-center">
                 <i class="bi bi-credit-card fs-1 text-primary me-3"></i>
                 <div>
-                    <h5 class="mb-1"><a href="#" class="text-decoration-none text-dark fw-bold">Payment Options</a></h5>
+                    <h5 class="mb-1"><a href="{{ url_for('payment_settings') }}" class="text-decoration-none text-dark fw-bold">Payment Options</a></h5>
                     <small class="text-muted">Edit or add payment methods</small>
                 </div>
             </div>

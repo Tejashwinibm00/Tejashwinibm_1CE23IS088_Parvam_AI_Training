@@ -20,6 +20,16 @@ def update_images():
             "Clinique": "https://m.media-amazon.com/images/I/51Xm8mZ+M1L._AC_SL1000_.jpg",
             "Dyson Airwrap": "https://m.media-amazon.com/images/I/61YF+eY4-EL._AC_SL1500_.jpg",
             "Fenty Beauty": "https://m.media-amazon.com/images/I/51eS9uN8tSL._AC_SL1000_.jpg",
+            "GoPro Hero 12": "https://m.media-amazon.com/images/I/51P6Wv2K-6L._AC_SL1500_.jpg",
+            "DJI Mini 4 Pro": "https://m.media-amazon.com/images/I/61B1v0WvM9L._AC_SL1500_.jpg",
+            "Apple Watch Series 9": "https://m.media-amazon.com/images/I/71X0u7m6uJL._AC_SL1500_.jpg",
+            "Kindle Paperwhite": "https://m.media-amazon.com/images/I/518I6N0-fEL._AC_SL1000_.jpg",
+            "Razer DeathAdder": "https://m.media-amazon.com/images/I/61E9y+6Qv3L._AC_SL1500_.jpg",
+            "CeraVe": "https://m.media-amazon.com/images/I/61p-L9Q+9QL._AC_SL1500_.jpg",
+            "Paula's Choice": "https://m.media-amazon.com/images/I/61m1R5D4pKL._AC_SL1500_.jpg",
+            "La Mer": "https://m.media-amazon.com/images/I/51Q-6m+9QHL._AC_SL1000_.jpg",
+            "Nothing Phone": "https://m.media-amazon.com/images/I/61U0v-p+9QL._AC_SL1500_.jpg",
+            "Motorola Razr": "https://m.media-amazon.com/images/I/71Y8v-Nf-UL._AC_SL1500_.jpg",
         }
 
         products = Product.query.all()

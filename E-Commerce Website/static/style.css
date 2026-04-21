@@ -1,15 +1,90 @@
-:root{
-	--brand:#0d6efd; /* bootstrap primary */
-	--accent:#0b5ed7;
-	--muted:#6c757d;
-	--card-radius:8px;
+:root {
+    --primary-color: #232f3e;
+    --accent-color: #febd69;
+    --bg-light: #f3f3f3;
+    --card-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-body { padding-bottom: 40px; background: #f8f9fa; color: #212529; }
-.card-img-top { height: 180px; object-fit: cover; border-top-left-radius: var(--card-radius); border-top-right-radius: var(--card-radius); }
-.navbar-brand { font-weight:700; color:var(--brand) !important; }
-.admin-header { background: linear-gradient(90deg, var(--brand), var(--accent)); color: #fff; padding: 1rem; border-radius: 6px; }
-.admin-table thead { background: rgba(255,255,255,0.06); color: #fff; }
-.admin-box { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
-.btn-primary { background: var(--brand); border-color: var(--brand); }
-.table-hover tbody tr:hover{ background: #f1f5ff; }
 
+body {
+    background-color: var(--bg-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111;
+}
+
+/* Product Card Alignment */
+.product-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: var(--card-shadow);
+    padding: 1rem;
+    background: white;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.product-img-container {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.product-img-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.product-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    height: 2.6em; /* Limit to 2 lines */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #b12704;
+    margin-top: auto;
+}
+
+.product-rating {
+    color: #ffa41c;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Auth Pages */
+.auth-container {
+    max-width: 400px;
+    margin: 4rem auto;
+}
+
+/* Navbar Enhancements */
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white !important;
+}
+
+/* Utility */
+.border-dashed {
+    border-style: dashed !important;
+}

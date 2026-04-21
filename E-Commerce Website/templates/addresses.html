@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Your Addresses | MiniStore{% endblock %}
+{% block content %}
+<h2 class="fw-bold mb-4">Your Addresses</h2>
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="card h-100 border-dashed border-2 p-5 text-center d-flex flex-column justify-content-center align-items-center" style="border: 2px dashed #ccc; cursor: pointer;">
+            <i class="bi bi-plus-lg fs-1 text-muted"></i>
+            <h4 class="text-muted mt-2">Add Address</h4>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 p-3 shadow-sm border">
+            <div class="card-body">
+                <h6 class="fw-bold mb-1">Default:</h6>
+                <p class="mb-0 fw-bold">{{ current_user.email.split('@')[0] }}</p>
+                <p class="mb-0">123 Tech Street</p>
+                <p class="mb-0">Silicon Valley, CA 94025</p>
+                <p class="mb-3">United States</p>
+                <div class="d-flex gap-2">
+                    <a href="#" class="small text-decoration-none">Edit</a>
+                    <span class="text-muted small">|</span>
+                    <a href="#" class="small text-decoration-none">Remove</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mt-4">
+    <a href="{{ url_for('profile') }}" class="text-decoration-none"><i class="bi bi-chevron-left"></i> Back to Account</a>
+</div>
+{% endblock %}

@@ -53,18 +53,18 @@
     <div class="row row-cols-1 row-cols-md-4 row-cols-lg-5 g-4">
       {% for p in featured %}
       <div class="col">
-        <div class="card h-100 border-0">
-          <a href="{{ url_for('product_page', pid=p.id) }}" class="text-center p-2">
-            <img src="{{ p.image if p.image.startswith('http') else url_for('static', filename=p.image) }}" class="card-img-top rounded" alt="{{ p.name }}" style="height: 180px; object-fit: contain;">
+        <div class="product-card">
+          <a href="{{ url_for('product_page', pid=p.id) }}" class="product-img-container">
+            <img src="{{ p.image if p.image.startswith('http') else url_for('static', filename=p.image) }}" alt="{{ p.name }}">
           </a>
-          <div class="card-body px-2">
-            <h6 class="card-title text-truncate" title="{{ p.name }}">{{ p.name }}</h6>
-            <div class="text-warning mb-1">
+          <div class="px-1">
+            <h6 class="product-title" title="{{ p.name }}">{{ p.name }}</h6>
+            <div class="product-rating">
                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
                 <small class="text-muted">(1,240)</small>
             </div>
-            <p class="card-text fw-bold fs-5 mb-0">${{ '%.2f'|format(p.price) }}</p>
-            <small class="text-success fw-bold">FREE Delivery Tomorrow</small>
+            <p class="product-price">${{ '%.2f'|format(p.price) }}</p>
+            <small class="text-success fw-bold d-block">FREE Delivery</small>
           </div>
         </div>
       </div>

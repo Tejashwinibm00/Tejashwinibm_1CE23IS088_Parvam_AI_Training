@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Payment Settings | MiniStore{% endblock %}
+{% block content %}
+<h2 class="fw-bold mb-4">Payment Options</h2>
+<div class="row">
+    <div class="col-md-8">
+        <div class="bg-white p-4 rounded shadow-sm border mb-4">
+            <h5 class="fw-bold mb-3">Your credit and debit cards</h5>
+            <div class="d-flex align-items-center p-3 border rounded mb-3">
+                <i class="bi bi-credit-card-2-front fs-2 me-3 text-muted"></i>
+                <div class="flex-grow-1">
+                    <div class="fw-bold">Visa ending in 1234</div>
+                    <div class="small text-muted">Expires: 12/2026</div>
+                </div>
+                <button class="btn btn-light border btn-sm rounded-pill">Edit</button>
+            </div>
+            <button class="btn btn-warning rounded-pill px-4"><i class="bi bi-plus-lg"></i> Add a card</button>
+        </div>
+        
+        <div class="bg-white p-4 rounded shadow-sm border">
+            <h5 class="fw-bold mb-3">Other payment methods</h5>
+            <div class="d-flex align-items-center p-3 border rounded">
+                <i class="bi bi-paypal fs-2 me-3 text-primary"></i>
+                <div class="flex-grow-1">
+                    <div class="fw-bold">PayPal</div>
+                    <div class="small text-muted">Connected account: {{ current_user.email }}</div>
+                </div>
+                <button class="btn btn-light border btn-sm rounded-pill">Remove</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mt-4">
+    <a href="{{ url_for('profile') }}" class="text-decoration-none"><i class="bi bi-chevron-left"></i> Back to Account</a>
+</div>
+{% endblock %}
