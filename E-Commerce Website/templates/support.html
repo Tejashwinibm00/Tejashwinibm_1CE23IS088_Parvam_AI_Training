@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}Help & Support | MiniStore{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="bg-white p-5 rounded shadow-sm border">
+            <h1 class="fw-bold mb-4 text-center">Hello. What can we help you with?</h1>
+            <div class="row g-4 mt-2">
+                <div class="col-md-6">
+                    <div class="p-4 border rounded h-100 text-center">
+                        <i class="bi bi-truck fs-1 text-primary"></i>
+                        <h5 class="mt-3 fw-bold">A Delivery</h5>
+                        <p class="text-muted small">Track or cancel an order</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 border rounded h-100 text-center">
+                        <i class="bi bi-arrow-return-left fs-1 text-primary"></i>
+                        <h5 class="mt-3 fw-bold">Returns & Refunds</h5>
+                        <p class="text-muted small">Return or exchange items</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 border rounded h-100 text-center">
+                        <i class="bi bi-credit-card fs-1 text-primary"></i>
+                        <h5 class="mt-3 fw-bold">Payment Issues</h5>
+                        <p class="text-muted small">Help with payment methods</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 border rounded h-100 text-center">
+                        <i class="bi bi-person fs-1 text-primary"></i>
+                        <h5 class="mt-3 fw-bold">Account Settings</h5>
+                        <p class="text-muted small">Change email or password</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5 border-top pt-4">
+                <h4 class="fw-bold">Contact Us</h4>
+                <p>Still need help? Reach out to our 24/7 support team.</p>
+                <div class="d-flex gap-3">
+                    <button class="btn btn-warning rounded-pill px-4">Chat Now</button>
+                    <button class="btn btn-outline-dark rounded-pill px-4">Email Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

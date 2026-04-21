@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Returns & Refunds | MiniStore{% endblock %}
+{% block content %}
+<div class="bg-white p-5 rounded shadow-sm border">
+    <h2 class="fw-bold mb-4">Returns & Refunds</h2>
+    <div class="mb-4">
+        <h4 class="fw-bold text-primary">30-Day Return Policy</h4>
+        <p>At MiniStore, we want you to be completely satisfied with your purchase. Most items can be returned within 30 days of delivery for a full refund or exchange. Items must be in their original condition and packaging.</p>
+    </div>
+    <div class="mb-4">
+        <h4 class="fw-bold text-primary">How to Start a Return</h4>
+        <ol>
+            <li>Go to <a href="{{ url_for('order_history') }}">Your Orders</a>.</li>
+            <li>Find the order you want to return and click "Return Items".</li>
+            <li>Select the reason for return and choose your preferred refund method.</li>
+            <li>Print your return shipping label and drop off the package at any authorized location.</li>
+        </ol>
+    </div>
+    <div class="mb-4">
+        <h4 class="fw-bold text-primary">Refund Process</h4>
+        <p>Once we receive and inspect your return, we will process your refund. Most refunds are completed within 5-7 business days. The refund will be credited back to your original payment method.</p>
+    </div>
+    <div class="alert alert-warning">
+        <strong>Note:</strong> Some items (like opened beauty products or certain electronics) may not be eligible for return due to hygiene or safety reasons. Please check the product page for specific return details.
+    </div>
+</div>
+{% endblock %}

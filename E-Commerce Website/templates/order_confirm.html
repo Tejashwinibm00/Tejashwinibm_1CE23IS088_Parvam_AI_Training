@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}Order Confirmed - MiniStore{% endblock %}
+{% block content %}
+<h2>Order confirmed</h2>
+<p>Order #{{ order.id }} placed. Total: ${{ '%.2f'|format(order.total_amount) }}</p>
+<a href="{{ url_for('index') }}" class="btn btn-primary">Continue shopping</a>
+{% endblock %}

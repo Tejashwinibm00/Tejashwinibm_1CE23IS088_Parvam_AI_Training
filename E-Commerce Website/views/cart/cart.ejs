@@ -1,0 +1,9 @@
+<h1>Your Cart</h1>
+<ul>
+  <% for (let id in cart) { %>
+    <li>Product <%= id %> - Quantity: <%= cart[id] %></li>
+  <% } %>
+</ul>
+<form action="/checkout/shipping" method="GET">
+  <button>Proceed to Checkout</button>
+</form>

@@ -1,0 +1,15 @@
+:root{
+	--brand:#0d6efd; /* bootstrap primary */
+	--accent:#0b5ed7;
+	--muted:#6c757d;
+	--card-radius:8px;
+}
+body { padding-bottom: 40px; background: #f8f9fa; color: #212529; }
+.card-img-top { height: 180px; object-fit: cover; border-top-left-radius: var(--card-radius); border-top-right-radius: var(--card-radius); }
+.navbar-brand { font-weight:700; color:var(--brand) !important; }
+.admin-header { background: linear-gradient(90deg, var(--brand), var(--accent)); color: #fff; padding: 1rem; border-radius: 6px; }
+.admin-table thead { background: rgba(255,255,255,0.06); color: #fff; }
+.admin-box { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+.btn-primary { background: var(--brand); border-color: var(--brand); }
+.table-hover tbody tr:hover{ background: #f1f5ff; }
+

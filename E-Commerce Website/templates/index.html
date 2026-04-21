@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block title %}Home | MiniStore Premium Shopping{% endblock %}
+{% block content %}
+<div id="heroCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+  <div class="carousel-inner rounded-3 shadow">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=1200&h=400" class="d-block w-100" alt="Electronics">
+      <div class="carousel-caption d-none d-md-block text-start" style="background: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px;">
+        <h2 class="display-5 fw-bold">Latest Tech & Gadgets</h2>
+        <p>Experience the future with our curated electronics collection.</p>
+        <a href="/category/1" class="btn btn-warning">Shop Now</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&h=400" class="d-block w-100" alt="Beauty">
+      <div class="carousel-caption d-none d-md-block text-start" style="background: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px;">
+        <h2 class="display-5 fw-bold">Premium Beauty Brands</h2>
+        <p>Unlock your glow with top-tier skincare and makeup.</p>
+        <a href="/category/2" class="btn btn-warning">Explore Beauty</a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="row mb-5">
+    {% for cat in categories %}
+    <div class="col-md-4">
+        <div class="card h-100 p-3">
+            <h4 class="card-title fw-bold">{{ cat.name }}</h4>
+            <div class="row g-2 mb-3">
+                {% for prod in cat.products[:4] %}
+                <div class="col-6">
+                    <a href="{{ url_for('product_page', pid=prod.id) }}">
+                        <img src="{{ prod.image if prod.image.startswith('http') else url_for('static', filename=prod.image) }}" class="img-fluid rounded" alt="{{ prod.name }}" style="height: 100px; object-fit: cover; width: 100%;">
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+            <a href="{{ url_for('category_page', cid=cat.id) }}" class="text-decoration-none text-primary fw-bold">See everything</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="bg-white p-4 rounded shadow-sm mb-5">
+    <h3 class="fw-bold mb-4">Recommended for You</h3>
+    <div class="row row-cols-1 row-cols-md-4 row-cols-lg-5 g-4">
+      {% for p in featured %}
+      <div class="col">
+        <div class="card h-100 border-0">
+          <a href="{{ url_for('product_page', pid=p.id) }}" class="text-center p-2">
+            <img src="{{ p.image if p.image.startswith('http') else url_for('static', filename=p.image) }}" class="card-img-top rounded" alt="{{ p.name }}" style="height: 180px; object-fit: contain;">
+          </a>
+          <div class="card-body px-2">
+            <h6 class="card-title text-truncate" title="{{ p.name }}">{{ p.name }}</h6>
+            <div class="text-warning mb-1">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                <small class="text-muted">(1,240)</small>
+            </div>
+            <p class="card-text fw-bold fs-5 mb-0">${{ '%.2f'|format(p.price) }}</p>
+            <small class="text-success fw-bold">FREE Delivery Tomorrow</small>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+</div>
+{% endblock %}

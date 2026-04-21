@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}{{ category.name }} | MiniStore{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-md-3">
+        <div class="bg-white p-3 rounded shadow-sm">
+            <h5 class="fw-bold mb-3">Filters</h5>
+            <div class="mb-4">
+                <h6>Price Range</h6>
+                <div class="list-group list-group-flush">
+                    <a href="{{ url_for('category_page', cid=category.id, price='under50') }}" class="list-group-item list-group-item-action border-0 px-0 py-1">Under $50</a>
+                    <a href="{{ url_for('category_page', cid=category.id, price='50to200') }}" class="list-group-item list-group-item-action border-0 px-0 py-1">$50 to $200</a>
+                    <a href="{{ url_for('category_page', cid=category.id, price='over200') }}" class="list-group-item list-group-item-action border-0 px-0 py-1">Over $200</a>
+                    <a href="{{ url_for('category_page', cid=category.id) }}" class="list-group-item list-group-item-action border-0 px-0 py-1 text-primary small">Clear Price Filter</a>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h6>Brand</h6>
+                <div class="list-group list-group-flush">
+                    <a href="{{ url_for('category_page', cid=category.id, brand='Apple') }}" class="list-group-item list-group-item-action border-0 px-0 py-1">Apple</a>
+                    <a href="{{ url_for('category_page', cid=category.id, brand='Samsung') }}" class="list-group-item list-group-item-action border-0 px-0 py-1">Samsung</a>
+                    <a href="{{ url_for('category_page', cid=category.id, brand='Sony') }}" class="list-group-item list-group-item-action border-0 px-0 py-1">Sony</a>
+                    <a href="{{ url_for('category_page', cid=category.id) }}" class="list-group-item list-group-item-action border-0 px-0 py-1 text-primary small">Clear Brand Filter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="bg-white p-3 rounded shadow-sm mb-4">
+            <h2 class="fw-bold">{{ category.name }}</h2>
+            <p class="text-muted">{{ category.description }}</p>
+        </div>
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            {% for p in products %}
+            <div class="col">
+                <div class="card h-100 border-0">
+                  <a href="{{ url_for('product_page', pid=p.id) }}" class="text-center p-3">
+                    <img src="{{ p.image if p.image.startswith('http') else url_for('static', filename=p.image) }}" class="card-img-top rounded" alt="{{ p.name }}" style="height: 200px; object-fit: contain;">
+                  </a>
+                  <div class="card-body">
+                    <h6 class="card-title fw-bold">{{ p.name }}</h6>
+                    <p class="text-muted small text-truncate">{{ p.description }}</p>
+                    <div class="text-warning mb-2">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                    </div>
+                    <p class="card-text fw-bold fs-4 mb-2">${{ '%.2f'|format(p.price) }}</p>
+                    <a href="{{ url_for('product_page', pid=p.id) }}" class="btn btn-outline-dark w-100 rounded-pill">Details</a>
+                  </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

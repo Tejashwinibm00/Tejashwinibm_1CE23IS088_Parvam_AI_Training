@@ -1,0 +1,186 @@
+id,name,image,keyword,local_path
+1,"Smart TV 55""",images/product_1.jpg,television,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_1.jpg
+2,Bluetooth Headphones,images/product_2.jpg,headphones,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_2.jpg
+3,Luxury Perfume,images/product_3.jpg,perfume,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_3.jpg
+4,Lipstick Set,images/product_4.jpg,lipstick,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_4.jpg
+5,Phone Model X,images/product_5.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_5.jpg
+6,Smart TV 1,images/product_6.jpg,television,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_6.jpg
+7,Bluetooth Headphones 2,images/product_7.jpg,headphones,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_7.jpg
+8,Wireless Mouse 3,images/product_8.jpg,computer-mouse,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_8.jpg
+9,Gaming Laptop 4,images/product_9.jpg,laptop,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_9.jpg
+10,4K Monitor 5,images/product_10.jpg,monitor,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_10.jpg
+11,Smart Speaker 6,images/product_11.jpg,speaker,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_11.jpg
+12,Portable SSD 7,images/product_12.jpg,ssd,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_12.jpg
+13,Fitness Tracker 8,images/product_13.jpg,fitness-tracker,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_13.jpg
+14,Action Camera 9,images/product_14.jpg,camera,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_14.jpg
+15,Drone 10,images/product_15.jpg,drone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_15.jpg
+16,Smart TV 11,images/product_16.jpg,television,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_16.jpg
+17,Bluetooth Headphones 12,images/product_17.jpg,headphones,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_17.jpg
+18,Wireless Mouse 13,images/product_18.jpg,computer-mouse,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_18.jpg
+19,Gaming Laptop 14,images/product_19.jpg,laptop,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_19.jpg
+20,4K Monitor 15,images/product_20.jpg,monitor,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_20.jpg
+21,Smart Speaker 16,images/product_21.jpg,speaker,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_21.jpg
+22,Portable SSD 17,images/product_22.jpg,ssd,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_22.jpg
+23,Fitness Tracker 18,images/product_23.jpg,fitness-tracker,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_23.jpg
+24,Action Camera 19,images/product_24.jpg,camera,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_24.jpg
+25,Drone 20,images/product_25.jpg,drone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_25.jpg
+26,Smart TV 21,images/product_26.jpg,television,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_26.jpg
+27,Bluetooth Headphones 22,images/product_27.jpg,headphones,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_27.jpg
+28,Wireless Mouse 23,images/product_28.jpg,computer-mouse,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_28.jpg
+29,Gaming Laptop 24,images/product_29.jpg,laptop,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_29.jpg
+30,4K Monitor 25,images/product_30.jpg,monitor,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_30.jpg
+31,Smart Speaker 26,images/product_31.jpg,speaker,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_31.jpg
+32,Portable SSD 27,images/product_32.jpg,ssd,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_32.jpg
+33,Fitness Tracker 28,images/product_33.jpg,fitness-tracker,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_33.jpg
+34,Action Camera 29,images/product_34.jpg,camera,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_34.jpg
+35,Drone 30,images/product_35.jpg,drone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_35.jpg
+36,Smart TV 31,images/product_36.jpg,television,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_36.jpg
+37,Bluetooth Headphones 32,images/product_37.jpg,headphones,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_37.jpg
+38,Wireless Mouse 33,images/product_38.jpg,computer-mouse,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_38.jpg
+39,Gaming Laptop 34,images/product_39.jpg,laptop,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_39.jpg
+40,4K Monitor 35,images/product_40.jpg,monitor,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_40.jpg
+41,Smart Speaker 36,images/product_41.jpg,speaker,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_41.jpg
+42,Portable SSD 37,images/product_42.jpg,ssd,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_42.jpg
+43,Fitness Tracker 38,images/product_43.jpg,fitness-tracker,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_43.jpg
+44,Action Camera 39,images/product_44.jpg,camera,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_44.jpg
+45,Drone 40,images/product_45.jpg,drone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_45.jpg
+46,Smart TV 41,images/product_46.jpg,television,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_46.jpg
+47,Bluetooth Headphones 42,images/product_47.jpg,headphones,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_47.jpg
+48,Wireless Mouse 43,images/product_48.jpg,computer-mouse,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_48.jpg
+49,Gaming Laptop 44,images/product_49.jpg,laptop,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_49.jpg
+50,4K Monitor 45,images/product_50.jpg,monitor,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_50.jpg
+51,Smart Speaker 46,images/product_51.jpg,speaker,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_51.jpg
+52,Portable SSD 47,images/product_52.jpg,ssd,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_52.jpg
+53,Fitness Tracker 48,images/product_53.jpg,fitness-tracker,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_53.jpg
+54,Action Camera 49,images/product_54.jpg,camera,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_54.jpg
+55,Drone 50,images/product_55.jpg,drone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_55.jpg
+56,Smart TV 51,images/product_56.jpg,television,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_56.jpg
+57,Bluetooth Headphones 52,images/product_57.jpg,headphones,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_57.jpg
+58,Wireless Mouse 53,images/product_58.jpg,computer-mouse,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_58.jpg
+59,Gaming Laptop 54,images/product_59.jpg,laptop,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_59.jpg
+60,4K Monitor 55,images/product_60.jpg,monitor,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_60.jpg
+61,Smart Speaker 56,images/product_61.jpg,speaker,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_61.jpg
+62,Portable SSD 57,images/product_62.jpg,ssd,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_62.jpg
+63,Fitness Tracker 58,images/product_63.jpg,fitness-tracker,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_63.jpg
+64,Action Camera 59,images/product_64.jpg,camera,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_64.jpg
+65,Drone 60,images/product_65.jpg,drone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_65.jpg
+66,Luxury Perfume 1,images/product_66.jpg,perfume,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_66.jpg
+67,Lipstick 2,images/product_67.jpg,lipstick,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_67.jpg
+68,Moisturizer 3,images/product_68.jpg,skincare,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_68.jpg
+69,Foundation 4,images/product_69.jpg,makeup,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_69.jpg
+70,Shampoo 5,images/product_70.jpg,shampoo,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_70.jpg
+71,Conditioner 6,images/product_71.jpg,conditioner,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_71.jpg
+72,Face Serum 7,images/product_72.jpg,serum,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_72.jpg
+73,Sunscreen 8,images/product_73.jpg,sunscreen,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_73.jpg
+74,Luxury Perfume 9,images/product_74.jpg,perfume,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_74.jpg
+75,Lipstick 10,images/product_75.jpg,lipstick,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_75.jpg
+76,Moisturizer 11,images/product_76.jpg,skincare,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_76.jpg
+77,Foundation 12,images/product_77.jpg,makeup,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_77.jpg
+78,Shampoo 13,images/product_78.jpg,shampoo,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_78.jpg
+79,Conditioner 14,images/product_79.jpg,conditioner,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_79.jpg
+80,Face Serum 15,images/product_80.jpg,serum,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_80.jpg
+81,Sunscreen 16,images/product_81.jpg,sunscreen,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_81.jpg
+82,Luxury Perfume 17,images/product_82.jpg,perfume,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_82.jpg
+83,Lipstick 18,images/product_83.jpg,lipstick,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_83.jpg
+84,Moisturizer 19,images/product_84.jpg,skincare,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_84.jpg
+85,Foundation 20,images/product_85.jpg,makeup,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_85.jpg
+86,Shampoo 21,images/product_86.jpg,shampoo,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_86.jpg
+87,Conditioner 22,images/product_87.jpg,conditioner,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_87.jpg
+88,Face Serum 23,images/product_88.jpg,serum,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_88.jpg
+89,Sunscreen 24,images/product_89.jpg,sunscreen,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_89.jpg
+90,Luxury Perfume 25,images/product_90.jpg,perfume,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_90.jpg
+91,Lipstick 26,images/product_91.jpg,lipstick,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_91.jpg
+92,Moisturizer 27,images/product_92.jpg,skincare,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_92.jpg
+93,Foundation 28,images/product_93.jpg,makeup,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_93.jpg
+94,Shampoo 29,images/product_94.jpg,shampoo,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_94.jpg
+95,Conditioner 30,images/product_95.jpg,conditioner,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_95.jpg
+96,Face Serum 31,images/product_96.jpg,serum,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_96.jpg
+97,Sunscreen 32,images/product_97.jpg,sunscreen,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_97.jpg
+98,Luxury Perfume 33,images/product_98.jpg,perfume,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_98.jpg
+99,Lipstick 34,images/product_99.jpg,lipstick,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_99.jpg
+100,Moisturizer 35,images/product_100.jpg,skincare,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_100.jpg
+101,Foundation 36,images/product_101.jpg,makeup,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_101.jpg
+102,Shampoo 37,images/product_102.jpg,shampoo,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_102.jpg
+103,Conditioner 38,images/product_103.jpg,conditioner,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_103.jpg
+104,Face Serum 39,images/product_104.jpg,serum,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_104.jpg
+105,Sunscreen 40,images/product_105.jpg,sunscreen,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_105.jpg
+106,Luxury Perfume 41,images/product_106.jpg,perfume,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_106.jpg
+107,Lipstick 42,images/product_107.jpg,lipstick,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_107.jpg
+108,Moisturizer 43,images/product_108.jpg,skincare,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_108.jpg
+109,Foundation 44,images/product_109.jpg,makeup,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_109.jpg
+110,Shampoo 45,images/product_110.jpg,shampoo,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_110.jpg
+111,Conditioner 46,images/product_111.jpg,conditioner,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_111.jpg
+112,Face Serum 47,images/product_112.jpg,serum,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_112.jpg
+113,Sunscreen 48,images/product_113.jpg,sunscreen,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_113.jpg
+114,Luxury Perfume 49,images/product_114.jpg,perfume,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_114.jpg
+115,Lipstick 50,images/product_115.jpg,lipstick,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_115.jpg
+116,Moisturizer 51,images/product_116.jpg,skincare,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_116.jpg
+117,Foundation 52,images/product_117.jpg,makeup,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_117.jpg
+118,Shampoo 53,images/product_118.jpg,shampoo,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_118.jpg
+119,Conditioner 54,images/product_119.jpg,conditioner,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_119.jpg
+120,Face Serum 55,images/product_120.jpg,serum,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_120.jpg
+121,Sunscreen 56,images/product_121.jpg,sunscreen,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_121.jpg
+122,Luxury Perfume 57,images/product_122.jpg,perfume,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_122.jpg
+123,Lipstick 58,images/product_123.jpg,lipstick,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_123.jpg
+124,Moisturizer 59,images/product_124.jpg,skincare,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_124.jpg
+125,Foundation 60,images/product_125.jpg,makeup,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_125.jpg
+126,Phone Model 1,images/product_126.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_126.jpg
+127,Phone Case 2,images/product_127.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_127.jpg
+128,Screen Protector 3,images/product_128.jpg,screen-protector,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_128.jpg
+129,Wireless Charger 4,images/product_129.jpg,charger,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_129.jpg
+130,Earbuds 5,images/product_130.jpg,earbuds,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_130.jpg
+131,Phone Model 6,images/product_131.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_131.jpg
+132,Phone Case 7,images/product_132.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_132.jpg
+133,Screen Protector 8,images/product_133.jpg,screen-protector,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_133.jpg
+134,Wireless Charger 9,images/product_134.jpg,charger,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_134.jpg
+135,Earbuds 10,images/product_135.jpg,earbuds,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_135.jpg
+136,Phone Model 11,images/product_136.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_136.jpg
+137,Phone Case 12,images/product_137.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_137.jpg
+138,Screen Protector 13,images/product_138.jpg,screen-protector,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_138.jpg
+139,Wireless Charger 14,images/product_139.jpg,charger,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_139.jpg
+140,Earbuds 15,images/product_140.jpg,earbuds,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_140.jpg
+141,Phone Model 16,images/product_141.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_141.jpg
+142,Phone Case 17,images/product_142.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_142.jpg
+143,Screen Protector 18,images/product_143.jpg,screen-protector,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_143.jpg
+144,Wireless Charger 19,images/product_144.jpg,charger,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_144.jpg
+145,Earbuds 20,images/product_145.jpg,earbuds,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_145.jpg
+146,Phone Model 21,images/product_146.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_146.jpg
+147,Phone Case 22,images/product_147.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_147.jpg
+148,Screen Protector 23,images/product_148.jpg,screen-protector,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_148.jpg
+149,Wireless Charger 24,images/product_149.jpg,charger,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_149.jpg
+150,Earbuds 25,images/product_150.jpg,earbuds,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_150.jpg
+151,Phone Model 26,images/product_151.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_151.jpg
+152,Phone Case 27,images/product_152.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_152.jpg
+153,Screen Protector 28,images/product_153.jpg,screen-protector,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_153.jpg
+154,Wireless Charger 29,images/product_154.jpg,charger,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_154.jpg
+155,Earbuds 30,images/product_155.jpg,earbuds,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_155.jpg
+156,Phone Model 31,images/product_156.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_156.jpg
+157,Phone Case 32,images/product_157.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_157.jpg
+158,Screen Protector 33,images/product_158.jpg,screen-protector,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_158.jpg
+159,Wireless Charger 34,images/product_159.jpg,charger,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_159.jpg
+160,Earbuds 35,images/product_160.jpg,earbuds,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_160.jpg
+161,Phone Model 36,images/product_161.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_161.jpg
+162,Phone Case 37,images/product_162.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_162.jpg
+163,Screen Protector 38,images/product_163.jpg,screen-protector,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_163.jpg
+164,Wireless Charger 39,images/product_164.jpg,charger,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_164.jpg
+165,Earbuds 40,images/product_165.jpg,earbuds,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_165.jpg
+166,Phone Model 41,images/product_166.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_166.jpg
+167,Phone Case 42,images/product_167.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_167.jpg
+168,Screen Protector 43,images/product_168.jpg,screen-protector,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_168.jpg
+169,Wireless Charger 44,images/product_169.jpg,charger,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_169.jpg
+170,Earbuds 45,images/product_170.jpg,earbuds,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_170.jpg
+171,Phone Model 46,images/product_171.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_171.jpg
+172,Phone Case 47,images/product_172.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_172.jpg
+173,Screen Protector 48,images/product_173.jpg,screen-protector,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_173.jpg
+174,Wireless Charger 49,images/product_174.jpg,charger,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_174.jpg
+175,Earbuds 50,images/product_175.jpg,earbuds,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_175.jpg
+176,Phone Model 51,images/product_176.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_176.jpg
+177,Phone Case 52,images/product_177.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_177.jpg
+178,Screen Protector 53,images/product_178.jpg,screen-protector,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_178.jpg
+179,Wireless Charger 54,images/product_179.jpg,charger,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_179.jpg
+180,Earbuds 55,images/product_180.jpg,earbuds,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_180.jpg
+181,Phone Model 56,images/product_181.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_181.jpg
+182,Phone Case 57,images/product_182.jpg,smartphone,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_182.jpg
+183,Screen Protector 58,images/product_183.jpg,screen-protector,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_183.jpg
+184,Wireless Charger 59,images/product_184.jpg,charger,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_184.jpg
+185,Earbuds 60,images/product_185.jpg,earbuds,C:\Users\CEC36\Desktop\Tejashwinibm_1CE23IS088_Parvam_AI_Training\E-Commerce Website\static\images\product_185.jpg

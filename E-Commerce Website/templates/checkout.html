@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}Review Order | MiniStore{% endblock %}
+{% block content %}
+<h2 class="fw-bold mb-4">Review Your Order</h2>
+<div class="row">
+    <div class="col-md-8">
+        <div class="bg-white p-4 rounded shadow-sm mb-4">
+            <h5>Shipping Address</h5>
+            <p>{{ session.get('shipping_address', 'Default Address') }}</p>
+            <hr>
+            <h5>Payment Method</h5>
+            <p>Ending in 1234</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow-sm">
+            <h5>Review items and shipping</h5>
+            {% for item in items %}
+            <div class="d-flex mb-3 align-items-center">
+                <img src="{{ item.product.image if item.product.image.startswith('http') else url_for('static', filename=item.product.image) }}" class="rounded me-3" style="width: 60px; height: 60px; object-fit: contain;">
+                <div>
+                    <h6 class="mb-0 fw-bold">{{ item.product.name }}</h6>
+                    <small>Qty: {{ item.qty }}</small>
+                    <p class="mb-0 fw-bold">${{ '%.2f'|format(item.item_total) }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="bg-white p-4 rounded shadow-sm">
+            <h5 class="fw-bold">Order Summary</h5>
+            <div class="d-flex justify-content-between mb-2">
+                <span>Items:</span>
+                <span>${{ '%.2f'|format(total) }}</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+                <span>Shipping:</span>
+                <span class="text-success">FREE</span>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between mb-4">
+                <h5 class="fw-bold">Order Total:</h5>
+                <h5 class="fw-bold text-danger">${{ '%.2f'|format(total) }}</h5>
+            </div>
+            <form action="{{ url_for('checkout') }}" method="post">
+                <input type="hidden" name="name" value="{{ current_user.email }}">
+                <input type="hidden" name="address" value="{{ session.get('shipping_address', 'Default') }}">
+                <button type="submit" class="btn btn-warning w-100 rounded-pill py-2 fw-bold">Place Your Order</button>
+            </form>
+            <p class="text-muted small mt-3 text-center">By placing your order, you agree to MiniStore's privacy notice and conditions of use.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

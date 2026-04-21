@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Create Account | MiniStore{% endblock %}
+{% block content %}
+<div class="row justify-content-center pt-5">
+    <div class="col-md-4">
+        <div class="text-center mb-4">
+            <h1 class="fw-bold">MiniStore</h1>
+        </div>
+        <div class="bg-white p-4 rounded shadow-sm border">
+            <h2 class="fw-normal mb-4">Create Account</h2>
+            <form action="{{ url_for('register') }}" method="post">
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Email</label>
+                    <input type="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Password</label>
+                    <input type="password" name="password" class="form-control" placeholder="At least 6 characters" required>
+                </div>
+                <button type="submit" class="btn btn-warning w-100 py-2 mb-3 shadow-sm">Create Account</button>
+            </form>
+            <p class="small">Already have an account? <a href="{{ url_for('login') }}">Sign in</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}

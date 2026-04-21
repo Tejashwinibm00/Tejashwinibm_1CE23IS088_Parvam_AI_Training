@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title %}Admin Dashboard - MiniStore{% endblock %}
+{% block content %}
+<div class="admin-header mb-4">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>
+      <h3 class="mb-0">Admin Dashboard</h3>
+      <small>Product management and quick insights</small>
+    </div>
+    <div>
+      <a class="btn btn-light" href="{{ url_for('admin_product_new') }}">+ New product</a>
+    </div>
+  </div>
+</div>
+
+<div class="admin-box">
+  <h5 class="mb-3">Products ({{ products|length }})</h5>
+  <div class="table-responsive">
+    <table class="table table-hover admin-table">
+      <thead>
+        <tr>
+          <th style="width:60px;">#</th>
+          <th>Product</th>
+          <th>Image</th>
+          <th style="width:120px;">Price</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in products %}
+        <tr>
+          <td>{{ p.id }}</td>
+          <td>{{ p.name }}</td>
+          <td>
+            {% if p.image %}
+              {% if p.image.startswith('http') %}
+                <img src="{{ p.image }}" alt="" style="height:48px;object-fit:cover;border-radius:4px;" loading="lazy">
+              {% else %}
+                <img src="{{ url_for('static', filename=p.image) }}" alt="" style="height:48px;object-fit:cover;border-radius:4px;" loading="lazy">
+              {% endif %}
+            {% else %}
+              <img src="{{ url_for('static', filename='placeholder.svg') }}" alt="" style="height:48px;object-fit:cover;border-radius:4px;" loading="lazy">
+            {% endif %}
+          </td>
+          <td>${{ '%.2f'|format(p.price) }}</td>
+          <td>{{ p.category.name if p.category else '' }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}

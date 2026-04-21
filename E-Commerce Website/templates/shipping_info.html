@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}Shipping Information | MiniStore{% endblock %}
+{% block content %}
+<div class="bg-white p-5 rounded shadow-sm border">
+    <h2 class="fw-bold mb-4">Shipping Rates & Policies</h2>
+    <div class="mb-4">
+        <h4 class="fw-bold text-primary">Free Shipping</h4>
+        <p>MiniStore offers FREE Standard Shipping on orders over $50. No coupon code is required. Free shipping will be automatically applied at checkout.</p>
+    </div>
+    <div class="mb-4">
+        <h4 class="fw-bold text-primary">Shipping Options</h4>
+        <table class="table table-bordered mt-3">
+            <thead class="bg-light">
+                <tr>
+                    <th>Method</th>
+                    <th>Estimated Delivery</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Standard Shipping</td>
+                    <td>3-5 Business Days</td>
+                    <td>$5.99 (Free over $50)</td>
+                </tr>
+                <tr>
+                    <td>Expedited Shipping</td>
+                    <td>2 Business Days</td>
+                    <td>$12.99</td>
+                </tr>
+                <tr>
+                    <td>Priority Shipping</td>
+                    <td>Next Day</td>
+                    <td>$24.99</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="mb-4">
+        <h4 class="fw-bold text-primary">Tracking Your Order</h4>
+        <p>Once your order has shipped, you will receive an email with a tracking number and a link to track your package. You can also track your order in the <a href="{{ url_for('order_history') }}">Your Orders</a> section of your account.</p>
+    </div>
+</div>
+{% endblock %}
